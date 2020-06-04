@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:gravity="center_vertical"
+    android:padding="40dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Student Form"
+        android:textColor="#434240"
+        android:textSize="20sp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="20dp"
+        android:hint="Name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlineBox">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/university"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="20dp"
+        android:hint="University"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlineBox">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="20dp"
+        android:hint="Department"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlineBox">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:completionThreshold="1"
+           >
+        </AutoCompleteTextView>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year : "
+        android:layout_marginTop="30dp"
+        android:textAppearance="?attr/textAppearanceLargePopupMenu"
+        android:textSize="19dp"
+        android:paddingLeft="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/firstyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1st"
+            android:textSize="19sp"/>
+
+        <RadioButton
+            android:id="@+id/secondyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2nd"
+            android:layout_marginLeft="10dp"
+            android:textSize="19sp"/>
+
+        <RadioButton
+            android:id="@+id/thirdyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3rd"
+            android:layout_marginLeft="10dp"
+            android:textSize="19sp"/>
+
+        <RadioButton
+            android:id="@+id/fourthyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4th"
+            android:layout_marginLeft="10dp"
+            android:textSize="19sp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Semester : "
+        android:layout_marginTop="0dp"
+        android:textAppearance="?attr/textAppearanceLargePopupMenu"
+        android:textSize="19dp"
+        android:paddingLeft="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/semester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/firstsemseter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1st semes"
+            android:textSize="19sp"
+            />
+
+        <RadioButton
+            android:id="@+id/secondsemester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2nd semes"
+            android:layout_marginLeft="10dp"
+            android:textSize="19sp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submit_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Submit"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Show"
+        android:textSize="13sp"
+        android:clickable="true"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:focusable="true" />
+
+</LinearLayout>

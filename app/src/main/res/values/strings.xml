@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SQLiteDataBaseCRUD</string>
+
+    <string-array name="departments">
+        <item>Computer Science and Engineering</item>
+        <item>Electronics and Electrical Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Chemical Engineering</item>
+    </string-array>
+
+    <string name="Show"><u>List of Students</u></string>
+</resources>
